@@ -4,11 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.BlankFragment">
-
+    tools:context=".fragments.RegisterFragment">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView"
         android:layout_width="215dp"
         android:layout_height="208dp"
         android:layout_marginTop="16dp"
@@ -18,69 +17,56 @@
         app:srcCompat="@drawable/logo_citatus_removebg_preview" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="496dp"
+        android:layout_marginTop="172dp"
         android:text="@string/app_name"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn2"
         android:layout_width="134dp"
         android:layout_height="42dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="80dp"
-        android:text="@string/button_iniciar_sesion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="134dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="140dp"
         android:text="@string/button_registrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/nombre"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="485dp"
-        tools:text="*****"
-        tools:ignore="MissingConstraints" />
+        android:hint="@string/password"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="404dp" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="168dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        tools:layout_editor_absoluteX="103dp"
-        tools:text="Email"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:srcCompat="@drawable/instagram" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
