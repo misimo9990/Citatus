@@ -8,4 +8,6 @@
     <string name="password">******</string>
     <string name="volver">Volver</string>
     <string name="nombre">Nombre</string>
+    <string name="rest_contrasenia">¿Has olvidado la contraseña?</string>
+    <string name="passOlvidado">Contraseña olvidada</string>
 </resources>

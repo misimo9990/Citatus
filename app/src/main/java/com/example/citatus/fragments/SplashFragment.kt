@@ -16,13 +16,13 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
 
         btnIniciarSesion.setOnClickListener {
             requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_login, LoginFragment())
+                .replace(R.id.fragment_splash, LoginFragment())
                 .addToBackStack(null)
                 .commit()
         }
         btnRegistrarse.setOnClickListener {
             requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_login, RegisterFragment())
+                .replace(R.id.fragment_splash, RegisterFragment())
                 .addToBackStack(null)
                 .commit()
         }
